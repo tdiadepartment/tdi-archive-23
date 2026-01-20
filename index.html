@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TDI Archive</title>
+  <style>
+    body {
+      background-color: #f2e8d5;
+      font-family: "Courier New", monospace;
+      color: #3a3a3a;
+      text-align: center;
+      margin-top: 100px;
+    }
+    input, button {
+      font-family: "Courier New", monospace;
+      padding: 8px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>RESTRICTED ACCESS</h2>
+<p>ENTER AUTHORIZATION CODE</p>
+
+<input type="password" id="password">
+<br>
+<button onclick="check()">ACCESS</button>
+
+<script>
+function check() {
+  const pass = document.getElementById("password").value;
+  if (pass === "TDI07401") {
+    window.location.href = "report23.html";
+  } else {
+    alert("ACCESS DENIED");
+  }
+}
+</script>
+
+</body>
+</html>
